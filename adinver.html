@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Announcement System</title>
+</head>
+
+
+
+
+<body>
+    <br> <br>
+    <h1>Public Announcement System</h1>
+    <br> <br>
+    <label for="Language Options">Choose the dialect required:</label> 
+    <select name="Language Options" id="Language Options"> 
+        <option value="English">English</option> 
+        <option value="Hindi">Hindi</option> 
+        <option value="Marathi">Marathi</option> 
+        <option value="Kannada">Kannada</option> 
+        <option value="Malyalam">Malyalam</option> 
+        <option value="Urdu">Urdu</option> 
+    </select> <br> <br> <br>
+
+    <form method="POST" action="/create_video">
+        <label for="text">Enter Text:</label>
+        <br> <br>
+        <textarea id="text" name="text" rows="4" cols="50"></textarea><br><br><br>
+        <input type="submit" value="Create Video">
+    </form>
+    <br><br>
+    <a href="/download_video">Download Video</a>
+</body>
+
+<style>
+    body{background-color: lightsteelblue; text-align: center; color: darkslategray;}
+</style>
+
+</html>

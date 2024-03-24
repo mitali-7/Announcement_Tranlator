@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Generator</title>
+</head>
+<body>
+    <form action="/generate" method="post" enctype="multipart/form-data">
+        <label for="text_input">Text Input:</label>
+        <input type="text" id="text_input" name="text_input" required>
+        <label for="image_input">Image Input:</label>
+        <input type="file" id="image_input" name="image_input" accept="image/*" required>
+        <input type="submit" value="Generate Video">
+    </form>
+</body>
+</html>

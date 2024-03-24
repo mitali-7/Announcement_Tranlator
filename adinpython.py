@@ -1,0 +1,1 @@
+pip install Flask moviepy pyttsx3 pydub

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Announcement System</title>
+
+    
+</head>
+<body>
+    <br> <br>
+    <h1>Public Announcement System</h1>
+    <br> <br>
+    <label for="Language Options">Choose the dialect required:</label> 
+    <select name="Language Options" id="Language Options"> 
+        <option value="English">English</option> 
+        <option value="Hindi">Hindi</option> 
+        <option value="Marathi">Marathi</option> 
+        <option value="Kannada">Kannada</option> 
+        <option value="Malyalam">Malyalam</option> 
+        <option value="Urdu">Urdu</option> 
+    </select> <br> <br> <br> <br>
+    <p>Enter the text: </p> 
+    <input id="userinp">  
+    <br> <br> 
+    <button onclick= "confirm()" >Submit</button>
+    <h2 id="msg"> </h2>
+
+    <style>
+        /* body{background-color: lightsteelblue; text-align: center; color: darkslategray;} */
+        body {
+            background-color:lightsteelblue;
+            /* background-image: url('bgless_train.png');  */
+            /* background-repeat: no-repeat; */
+            /* background-attachment: fixed; */
+            /* background-size: 100% 100%; */
+            text-align: center; 
+            color: darkslategray;
+        }
+    </style>
+
+    <script>
+        function confirm()
+        {
+            let userinp = document.querySelector("#userinp");
+            let msg = document.querySelector("#msg");
+            msg.innerHTML = userinp.value;
+            //document.write(userinp.value)
+            //alert("Response Submitted");
+        }
+
+    </script>
+
+<!-- <style>
+    body {
+      background-image: url('trainbus.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    </style> -->
+    
+    <img 
+    src="bgless_bus.png"
+    align="left"
+    alt="Picture of a bus">
+
+    <img 
+    src="bgless_train.png"
+    align="right"
+    alt="Picture of a train">
+    
+
+    
+</body>
+</html>

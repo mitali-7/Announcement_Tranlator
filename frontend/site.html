@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text to Video Conversion</title>
+</head>
+<body>
+    <h1>Text to Video Conversion</h1>
+    
+    <form id="conversion-form">
+        <label for="Language Options">Choose the dialect required:</label> 
+        <select id="language-select"> 
+            <option value="English">English</option> 
+            <option value="Hindi">Hindi</option> 
+            <option value="Marathi">Marathi</option> 
+            <option value="Bengali">Bengali</option> 
+            <option value="Tamil">Tamil</option> 
+            <option value="Telugu">Telugu</option>
+        </select>
+
+        <br> <br> <br>
+
+    <textarea id="text-input"></textarea>
+    <br> <br>
+    <button type="button" id="convert-button">Convert to Video</button>
+
+    </form>
+
+    <br> <br> <br>
+    <video id="video-output" controls></video>
+
+    <script src="connect.js"></script>
+</body>
+</html>
